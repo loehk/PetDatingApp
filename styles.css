@@ -1,4 +1,42 @@
 /* Landing page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.backgroundImage {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: -99;
+}
+
+.landingBodyContainer {
+  font-size: 20px;
+}
+
+.infoSection {
+  margin-top: 100px;
+  background-color: #fff;
+  height: 500px;
+}
+
+.landingBodyContainer ul {
+  list-style: none;
+}
+
+.landingNav img {
+  width: 150px;
+}
+
+.mainHeading {
+  color: #fff;
+  font-size: 8vw;
+  text-align: center;
+}
+
 .signupForm {
     margin-inline: auto;
     width: 300px;
@@ -24,12 +62,7 @@
     font-size: 16px;
   }
   
-/* Dating site */
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+  /* Dating site */
 
 .pageContainer{
     display: flex;
