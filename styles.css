@@ -1,5 +1,15 @@
 /* Landing page */
+* {
+    box-sizing: border-box;
+}
 
+.landingMain {
+    background-image: url(images/pups_couple_game_fun_frolic_paint-719144.jpg);
+}
+
+.landingNav img {
+    width: 100px;
+}
 
 
 
