@@ -6,6 +6,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+.backgroundImage {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: -99;
+}
+
 .landingBodyContainer {
   font-size: 20px;
   background-image: url(images/background.png);
