@@ -1,4 +1,27 @@
 /* Landing page */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.landingBodyContainer {
+    font-size: 20px;
+}
+
+.landingBodyContainer ul {
+    list-style: none;
+}
+
+.landingMain {
+    background-image: url(images/background.png);
+}
+
+
+.landingNav img {
+    width: 150px;
+}
+
+
 .signupForm {
     margin-inline: auto;
     width: 300px;
