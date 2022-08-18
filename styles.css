@@ -1,11 +1,13 @@
 /* Landing page */
 * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .landingBodyContainer {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .landingNav {
@@ -27,40 +29,43 @@ align-items: center;
 }
 
 .landingMain {
-    background-image: url(images/background.png);
+  background-image: url(images/background.png);
 }
 
-.languageSelector {
-    font-weight: 500;
+.landingNav img {
+  width: 150px;
 }
 
-.rightOptions {
-    align-self: flex-end;
+.mainHeading {
+  color: #fff;
+  font-size: 8vw;
+  text-align: center;
 }
 
 .signupForm {
-    margin-inline: auto;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .signupForm label {
-    font-size: 16px;
-  }
-  
-  .signupForm input {
-    font-size: 16px;
-    outline: none;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .signupButton {
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  /* Dating site */
+  margin-inline: auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupForm label {
+  color: #fff;
+  font-size: 16px;
+}
+
+.signupForm input {
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.signupButton {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Dating site */
