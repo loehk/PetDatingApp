@@ -38,6 +38,15 @@ width: 100%;
     right: 0;
     margin-right: 1rem;
 }
+
+.rightOptions button {
+    background-color: white;
+    font-size: inherit;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+}
 .landingNavWrapper {
     display: flex;
     justify-content: space-between;
@@ -46,6 +55,7 @@ width: 100%;
 .languageSelector {
     font-weight: 800;
     margin-right: 3rem;
+    cursor: pointer;
 }
 
 .landingNav img {
