@@ -5,3 +5,67 @@
 
 /* Dating site */
 
+.pageContainer{
+    width: 100%;
+    height: auto;
+}
+.messageContainer{
+    width: 30%;
+    height: auto;
+}
+
+.messageContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.userList{
+    height: auto;
+}
+.profilePic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.msgPic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btnMsgLeft{
+    cursor: pointer;
+    width: 150px;    
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
+}
+.btnMsgLeft:first-of-type{
+    color: rgb(139, 139, 139);
+}
+.btnMsgLeft:last-of-type{
+    color: rgb(228, 228, 0);
+}
+.matchesList{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.match{
+    display: flex;
+    align-items: center;
+}
