@@ -256,7 +256,18 @@ a {
 
 .profileInfo {
     padding-left: 30px;
+    color: #fff;
 }
+
+.petName {
+    padding-bottom: 5%;
+}
+
+.petAge {
+    padding-bottom: 25%;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .profileContainer {
