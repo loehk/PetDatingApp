@@ -6,16 +6,25 @@
   font-family: "Poppins", sans-serif;
 }
 
+.backgroundImage {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: -99;
+}
+
 .landingBodyContainer {
   font-size: 20px;
 }
 
-.landingBodyContainer ul {
-  list-style: none;
+.infoSection {
+  margin-top: 100px;
+  background-color: #fff;
+  height: 500px;
 }
 
-.landingMain {
-  background-image: url(images/background.png);
+.landingBodyContainer ul {
+  list-style: none;
 }
 
 .landingNav img {
