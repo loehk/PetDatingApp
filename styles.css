@@ -7,9 +7,9 @@
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
 
 .backgroundImage {
@@ -25,61 +25,59 @@ a {
 }
 
 .landingNav {
-display: flex;
-align-items: center;
-margin: 1rem;
-color: white;
-margin-top: 0;
-width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  color: white;
+  margin-top: 0;
+  width: 100%;
 }
 
 .rightOptions {
-    position: absolute;
-    right: 0;
-    margin-right: 1rem;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
 }
 
 .rightOptions button {
-    background-color: white;
-    font-size: inherit;
-    padding: 0.6rem 2rem;
-    border-radius: 2rem;
-    cursor: pointer;
-    border: none;
+  background-color: white;
+  font-size: inherit;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
 }
 .landingNavWrapper {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .languageSelector {
-    font-weight: 800;
-    margin-right: 3rem;
-    cursor: pointer;
+  font-weight: 800;
+  margin-right: 3rem;
+  cursor: pointer;
 }
 
-
-
 .landingNav img {
-    width: 150px;
-    margin-right: 3rem;
-    filter: brightness(300);
-    margin: 1rem;
+  width: 150px;
+  margin-right: 3rem;
+  filter: brightness(300);
+  margin: 1rem;
 }
 
 .landingNav ul {
-    list-style: none;
+  list-style: none;
 }
 
 .landingNav li {
-    display: inline;
-    margin-right: 2rem;
+  display: inline;
+  margin-right: 2rem;
 }
 
 .landingNav li:hover {
-    color: rgb(248, 79, 79);
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+  color: rgb(248, 79, 79);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
 }
 
 .landingNav img {
@@ -223,4 +221,52 @@ width: 100%;
 
 .expirationTime {
   color: rgb(139, 139, 139);
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: left;
+  max-width: 1200px;
+  padding: 5%;
+}
+
+.profile {
+    display: flex;
+    padding: 20px;
+    background-color: #f0c43a;
+    min-width: 20%; 
+    justify-content: left;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.profilePicture img {
+    width: 90%;
+    height: 90%;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 450px;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.profileInfo {
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .profileContainer {
+        flex-direction: column;
+        min-width: 200px;
+    }
+
+    .profile {
+        flex-direction: column;
+        min-width: 200px;
+    }
+    
 }
