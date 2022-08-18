@@ -35,112 +35,137 @@
   color: #fff;
   font-size: 8vw;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .signupForm {
-    margin-inline: auto;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .signupForm label {
-    font-size: 16px;
-  }
-  
-  .signupForm input {
-    font-size: 16px;
-    outline: none;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .signupButton {
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  /* Dating site */
-
-.pageContainer{
-    display: flex;
-    height: 100%;
+  margin-inline: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
-.messageContainer{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 40px;
-    box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
+.signupForm label {
+  color: #fff;
+  font-size: 20px;
 }
 
-.user{
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: rgb(211, 211, 211) 1px solid;
+.signupForm input {
+  border: none;
+  font-size: 20px;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.15s ease-in-out;
 }
 
-.userList{
-    height: auto;
+.signupForm input:hover {
+  background-color: rgba(255, 255, 255, 0.6);
 }
-.profilePic{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 30px;
+.signupForm input:focus {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.msgPic{
-    padding: 5px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: #f0c43a solid 4px;
+.signupButton {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  transition: background-color 0.15s ease-in-out;
 }
-.matchInfo{
-    margin-left: 20px;
+
+.signupButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
-.categories{
-    display: flex;
-    justify-content: space-evenly;
+
+/* Dating site */
+
+.pageContainer {
+  display: flex;
+  height: 100%;
 }
-.btnMsgLeft{
-    cursor: pointer;
-    width: 150px;    
-    font-size: 18px;
-    border: none;
-    padding: 15px;
-    border-radius: 5%;
-    box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 40px;
+  box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2),
+    0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
-.btnMsgLeft:first-of-type{
-    color: rgb(139, 139, 139);
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: rgb(211, 211, 211) 1px solid;
 }
-.btnMsgLeft:last-of-type{
-    color: #f0c43a;
-    background-color: white;
+
+.userList {
+  height: auto;
 }
-.matchesList{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
+.profilePic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 30px;
 }
-.match{
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
+
+.msgPic {
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: #f0c43a solid 4px;
+}
+.matchInfo {
+  margin-left: 20px;
+}
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btnMsgLeft {
+  cursor: pointer;
+  width: 150px;
+  font-size: 18px;
+  border: none;
+  padding: 15px;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2),
+    0 6px 20px 0 rgba(197, 197, 197, 0.19);
+}
+.btnMsgLeft:first-of-type {
+  color: rgb(139, 139, 139);
+}
+.btnMsgLeft:last-of-type {
+  color: #f0c43a;
+  background-color: white;
+}
+.matchesList {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.match {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
 }
 
 .animalName,
-.expirationTime{
-    margin: 0;
+.expirationTime {
+  margin: 0;
 }
 
-.expirationTime{
-    color: rgb(139, 139, 139);
+.expirationTime {
+  color: rgb(139, 139, 139);
 }
