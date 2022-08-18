@@ -8,19 +8,35 @@
     font-size: 20px;
 }
 
-.landingBodyContainer ul {
+.landingNav {
+display: flex;
+align-items: center;
+}
+
+.landingNav img {
+    width: 150px;
+}
+
+.landingNav ul {
     list-style: none;
+}
+
+.landingNav li {
+    display: inline;
+    margin-right: 2rem;
 }
 
 .landingMain {
     background-image: url(images/background.png);
 }
 
-
-.landingNav img {
-    width: 150px;
+.languageSelector {
+    font-weight: 500;
 }
 
+.rightOptions {
+    align-self: flex-end;
+}
 
 .signupForm {
     margin-inline: auto;
