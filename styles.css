@@ -244,6 +244,8 @@ a {
   display: flex;
   flex-direction: column;
   width: 30%;
+  height: max-content;
+  min-height: 100%;
   padding: 40px;
   box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
@@ -290,6 +292,7 @@ a {
 }
 .match{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 40px;
   padding: 10px;
