@@ -69,6 +69,12 @@
     height: 100%;
 }
 
+@media (max-width: 800px) {
+    .messageContainer {
+      display: none !important;
+    }
+}
+
 .messageContainer{
     display: flex;
     flex-direction: column;
@@ -79,6 +85,7 @@
 
 .user{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 40px;
     padding-bottom: 40px;
@@ -89,42 +96,28 @@
     height: auto;
 }
 .profilePic{
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     margin-right: 30px;
 }
 
 .msgPic{
-    padding: 5px;
-    width: 60px;
-    height: 60px;
+    padding: 2px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    border: #f0c43a solid 4px;
+    border: #f0c43a solid 6px;
 }
 .matchInfo{
     margin-left: 20px;
 }
 .categories{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.btnMsgLeft{
-    cursor: pointer;
-    width: 150px;    
-    font-size: 18px;
-    border: none;
-    padding: 15px;
-    border-radius: 5%;
-    box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
-}
-.btnMsgLeft:first-of-type{
-    color: rgb(139, 139, 139);
-}
-.btnMsgLeft:last-of-type{
-    color: #f0c43a;
-    background-color: white;
-}
+
 .matchesList{
     margin-top: 40px;
     display: flex;
@@ -133,7 +126,14 @@
 .match{
     display: flex;
     align-items: center;
-    padding-top: 40px;
+    margin-top: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.match:hover{
+    background-color: rgb(245, 245, 238); 
+    box-shadow: 0 4px 12px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
 
 .animalName,
@@ -143,4 +143,75 @@
 
 .expirationTime{
     color: rgb(139, 139, 139);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+  }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(236, 236, 236);
+}
+
+.slider:before {
+  border-radius: 20px;
+  position: absolute;
+  height: 43px;
+  width: 49%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  content: "";
+}
+
+input:checked + .slider:before {
+  background-color: #ffffff;
+  content: "";
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+}
+
+.convText {
+    color: #f0c43a;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 24%;
+    font-size: 1vw;
+}
+.matchText
+{
+    color: rgb(119, 119, 119);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 75%;
+    font-size: 1vw;
+}
+
+input:checked + .slider .matchText{
+    color: #f0c43a;
+}
+
+input:checked + .slider .convText{
+    color: rgb(119, 119, 119);
 }
