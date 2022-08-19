@@ -6,212 +6,490 @@
   font-family: "Poppins", sans-serif;
 }
 
-.backgroundImage {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-  z-index: -99;
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
 
 .landingBodyContainer {
   font-size: 20px;
 }
 
-.infoSection {
-  margin-top: 100px;
-  background-color: #fff;
-  height: 500px;
+.headerAndMainContainer {
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130vh;
 }
 
-.landingBodyContainer ul {
+.mainAndFooterContainer {
+  position: relative;
+  top: 10rem;
+  z-index: 1;
+}
+
+.landingNav {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 0;
+  color: white;
+  margin-top: 0;
+  width: 100%;
+  background: linear-gradient(
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.3),
+    transparent
+  );
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+@media only screen and (min-width: 1092px) {
+  .rightOptions {
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 1091px) {
+  .rightOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .rightOptions button {
+    width: max-content;
+  }
+}
+
+.rightOptions button {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: inherit;
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.rightOptions button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.15s ease-in-out;
+}
+
+.landingNavWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.languageSelectorContainer {
+  cursor: pointer;
+}
+
+.languageSelector {
+  font-weight: 800;
+  margin-right: 3rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.landingNav a img {
+  margin-right: 3rem;
+  filter: brightness(300);
+  margin: 3rem;
+  cursor: pointer;
+}
+
+.languageIcon {
+  width: 30px !important;
+  position: relative;
+  top: 0.5rem;
+  display: none;
+}
+@media only screen and (min-width: 958px) {
+  .languageIcon {
+    display: inline;
+  }
+}
+
+.landingNav ul {
   list-style: none;
+}
+
+.landingNav li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.landingNav li:hover {
+  color: rgb(248, 79, 79);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+@media only screen and (max-width: 692px) {
+  .landingNav ul {
+    display: none;
+  }
+  .hamburgerIcon {
+    display: inline;
+    width: 50px !important;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 693px) {
+  .hamburgerIcon {
+    display: none;
+  }
 }
 
 .landingNav img {
   width: 150px;
 }
 
+.landingMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mainHeading {
   color: #fff;
-  font-size: 8vw;
+  font-size: 7vw;
   text-align: center;
+  margin-bottom: 60px;
+  line-height: 8rem;
+  width: 50rem;
 }
 
 .signupForm {
-    margin-inline: auto;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .signupForm label {
-    font-size: 16px;
-  }
-  
-  .signupForm input {
-    font-size: 16px;
-    outline: none;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  .signupButton {
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  /* Dating site */
+  margin-inline: auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupForm label {
+  color: #fff;
+  font-size: 20px;
+}
+
+.signupForm input {
+  border: none;
+  font-size: 20px;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.15s ease-in-out;
+}
+
+.signupForm input:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.signupForm input:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.signupButton {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: 500;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.signupButton:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Dating site */
 
 .pageContainer{
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 
 @media (max-width: 800px) {
-    .messageContainer {
-      display: none !important;
-    }
+  .messageContainer {
+    display: none !important;
+  }
+  .msg_icon{
+    display: block !important;
+  }
+}
+
+.msg_icon{
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  margin-top: 60px;
+  cursor: pointer;
 }
 
 .messageContainer{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 40px;
-    box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 40px;
+  box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
 
 .user{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: rgb(211, 211, 211) 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: rgb(211, 211, 211) 1px solid;
 }
 
 .userList{
-    height: auto;
+  height: auto;
 }
 .profilePic{
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    margin-right: 30px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-right: 30px;
 }
 
 .msgPic{
-    padding: 2px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: #f0c43a solid 6px;
+  padding: 2px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: #f0c43a solid 6px;
 }
 .matchInfo{
-    margin-left: 20px;
+  margin-left: 20px;
 }
 .categories{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .matchesList{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .match{
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    padding: 10px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .match:hover{
-    background-color: rgb(245, 245, 238); 
-    box-shadow: 0 4px 12px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
+  background-color: rgb(245, 245, 238); 
+  box-shadow: 0 4px 12px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
 
 .animalName,
 .expirationTime{
-    margin: 0;
+  margin: 0;
 }
 
 .expirationTime{
-    color: rgb(139, 139, 139);
+  color: rgb(139, 139, 139);
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-  }
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+}
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+opacity: 0;
+width: 0;
+height: 0;
 }
 
 .slider {
-  border-radius: 20px;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(236, 236, 236);
+border-radius: 20px;
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgb(236, 236, 236);
 }
 
 .slider:before {
-  border-radius: 20px;
-  position: absolute;
-  height: 43px;
-  width: 49%;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  content: "";
+border-radius: 20px;
+position: absolute;
+height: 43px;
+width: 49%;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .4s;
+content: "";
 }
 
 input:checked + .slider:before {
-  background-color: #ffffff;
-  content: "";
+background-color: #ffffff;
+content: "";
 }
 
 input:checked + .slider:before {
-  transform: translateX(100%);
+transform: translateX(100%);
 }
 
 .convText {
-    color: #f0c43a;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 24%;
-    font-size: 1vw;
+  color: #f0c43a;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 24%;
+  font-size: 1vw;
 }
 .matchText
 {
-    color: rgb(119, 119, 119);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 75%;
-    font-size: 1vw;
+  color: rgb(119, 119, 119);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 75%;
+  font-size: 1vw;
 }
 
 input:checked + .slider .matchText{
-    color: #f0c43a;
+  color: #f0c43a;
 }
 
 input:checked + .slider .convText{
-    color: rgb(119, 119, 119);
+  color: rgb(119, 119, 119);
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* justify-content: space-between; */
+  max-width: 1000px;
+  padding: 40px;
+}
+
+.logo {
+  padding: 0px 10px 10px 10px;
+  margin: 0px 10px 40px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile {
+  padding: 10px 15px 10px 15px;
+  margin: 10px 15px 10px 15px;
+  display: flex;
+  padding: 20px;
+  background-color: #f0c43a;
+  min-width: 20%;
+  justify-content: left;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(197, 197, 197, 0.19);
+}
+
+.profilePicture img {
+  width: 90%;
+  height: 90%;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 450px;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(136, 136, 136, 0.2);
+}
+
+.profileInfo {
+  padding-left: 25px;
+  color: #fff;
+  background-color: #f2cd61;
+  width: 100%;
+  height: 100%;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 450px;
+  max-height: 450px;
+  border-radius: 25px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(136, 136, 136, 0.2);
+}
+
+.petName {
+  padding-top: 100px;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px rgba(136, 136, 136, 0.2),
+    2px 2px rgba(136, 136, 136, 0.2);
+}
+
+.petAge {
+  padding-bottom: 50px;
+  text-shadow: 2px 2px rgba(136, 136, 136, 0.2),
+    2px 2px rgba(136, 136, 136, 0.2);
+}
+
+.footerButtons {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-self: flex-start;
+  padding: 10px;
+  margin: 10px;
+}
+
+.declineButton img {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 100px;
+  margin-right: 30px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(197, 197, 197, 0.19);
+}
+
+.acceptButton img {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 100px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(197, 197, 197, 0.19);
+}
+
+@media screen and (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+    min-width: 200px;
+  }
+
+  .profile {
+    flex-direction: column;
+    min-width: 200px;
+  }
 }
