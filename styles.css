@@ -14,19 +14,19 @@ a {
 
 .landingBodyContainer {
   font-size: 20px;
- }
+}
 
 .headerAndMainContainer {
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 130vh;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130vh;
 }
 
 .mainAndFooterContainer {
-    position: relative;
-    top: 10rem;
-    z-index: 1;
+  position: relative;
+  top: 10rem;
+  z-index: 1;
 }
 
 .landingNav {
@@ -37,35 +37,38 @@ a {
   color: white;
   margin-top: 0;
   width: 100%;
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), transparent);
+  background: linear-gradient(
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.3),
+    transparent
+  );
   position: fixed;
   top: 0;
   z-index: 2;
 }
 @media only screen and (min-width: 1092px) {
-    .rightOptions {
-        position: absolute;
-        right: 0;
-        margin-right: 1rem;
-      }
-
-}   
+  .rightOptions {
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+  }
+}
 @media only screen and (max-width: 1091px) {
-    .rightOptions {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 1rem;
-    }
-    .rightOptions button {
-        width: max-content;
-    }
+  .rightOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .rightOptions button {
+    width: max-content;
+  }
 }
 
-
 .rightOptions button {
- background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: inherit;
   padding: 0.6rem 2rem;
   border-radius: 2rem;
@@ -74,8 +77,8 @@ a {
 }
 
 .rightOptions button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    transition: background-color 0.15s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.15s ease-in-out;
 }
 
 .landingNavWrapper {
@@ -84,7 +87,7 @@ a {
 }
 
 .languageSelectorContainer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .languageSelector {
@@ -102,15 +105,15 @@ a {
 }
 
 .languageIcon {
-    width: 30px !important;
-    position: relative;
-    top: 0.5rem;
-    display: none;
+  width: 30px !important;
+  position: relative;
+  top: 0.5rem;
+  display: none;
 }
 @media only screen and (min-width: 958px) {
-    .languageIcon {
-        display: inline;
-    }
+  .languageIcon {
+    display: inline;
+  }
 }
 
 .landingNav ul {
@@ -129,33 +132,31 @@ a {
 }
 
 @media only screen and (max-width: 692px) {
-.landingNav ul {
+  .landingNav ul {
     display: none;
-}
-.hamburgerIcon {
+  }
+  .hamburgerIcon {
     display: inline;
     width: 50px !important;
     margin-left: 10%;
     cursor: pointer;
-}
+  }
 }
 
 @media only screen and (min-width: 693px) {
-    .hamburgerIcon {
-        display: none;
-    }
-    
+  .hamburgerIcon {
+    display: none;
+  }
 }
-
 
 .landingNav img {
   width: 150px;
 }
 
 .landingMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mainHeading {
@@ -216,87 +217,168 @@ a {
 
 /* Dating site */
 
-.pageContainer {
+.pageContainer{
   display: flex;
   height: 100%;
 }
 
-.messageContainer {
+@media (max-width: 800px) {
+  .messageContainer {
+    display: none !important;
+  }
+  .msg_icon{
+    display: block !important;
+  }
+}
+
+.msg_icon{
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.messageContainer{
   display: flex;
   flex-direction: column;
   width: 30%;
   padding: 40px;
-  box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2),
-    0 6px 20px 0 rgba(197, 197, 197, 0.19);
+  box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
 
-.user {
+.user{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: rgb(211, 211, 211) 1px solid;
 }
 
-.userList {
+.userList{
   height: auto;
 }
-.profilePic {
-  width: 80px;
-  height: 80px;
+.profilePic{
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   margin-right: 30px;
 }
 
-.msgPic {
-  padding: 5px;
-  width: 60px;
-  height: 60px;
+.msgPic{
+  padding: 2px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  border: #f0c43a solid 4px;
+  border: #f0c43a solid 6px;
 }
-.matchInfo {
+.matchInfo{
   margin-left: 20px;
 }
-.categories {
+.categories{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.btnMsgLeft {
-  cursor: pointer;
-  width: 150px;
-  font-size: 18px;
-  border: none;
-  padding: 15px;
-  border-radius: 5%;
-  box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2),
-    0 6px 20px 0 rgba(197, 197, 197, 0.19);
-}
-.btnMsgLeft:first-of-type {
-  color: rgb(139, 139, 139);
-}
-.btnMsgLeft:last-of-type {
-  color: #f0c43a;
-  background-color: white;
-}
-.matchesList {
+
+.matchesList{
   margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
-.match {
+.match{
   display: flex;
   align-items: center;
-  padding-top: 40px;
+  margin-top: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.match:hover{
+  background-color: rgb(245, 245, 238); 
+  box-shadow: 0 4px 12px 0 rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
 
 .animalName,
-.expirationTime {
+.expirationTime{
   margin: 0;
 }
 
-.expirationTime {
+.expirationTime{
   color: rgb(139, 139, 139);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+border-radius: 20px;
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgb(236, 236, 236);
+}
+
+.slider:before {
+border-radius: 20px;
+position: absolute;
+height: 43px;
+width: 49%;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .4s;
+content: "";
+}
+
+input:checked + .slider:before {
+background-color: #ffffff;
+content: "";
+}
+
+input:checked + .slider:before {
+transform: translateX(100%);
+}
+
+.convText {
+  color: #f0c43a;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 24%;
+  font-size: 1vw;
+}
+.matchText
+{
+  color: rgb(119, 119, 119);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 75%;
+  font-size: 1vw;
+}
+
+input:checked + .slider .matchText{
+  color: #f0c43a;
+}
+
+input:checked + .slider .convText{
+  color: rgb(119, 119, 119);
 }
 
 .profileContainer {
@@ -325,6 +407,8 @@ a {
   justify-content: left;
   align-items: center;
   border-radius: 25px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(197, 197, 197, 0.19);
 }
 
 .profilePicture img {
@@ -336,6 +420,8 @@ a {
   max-height: 450px;
   object-fit: cover;
   border-radius: 25px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(136, 136, 136, 0.2);
 }
 
 .profileInfo {
@@ -349,15 +435,21 @@ a {
   max-width: 450px;
   max-height: 450px;
   border-radius: 25px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(136, 136, 136, 0.2);
 }
 
 .petName {
   padding-top: 100px;
   padding-bottom: 10px;
+  text-shadow: 2px 2px rgba(136, 136, 136, 0.2),
+    2px 2px rgba(136, 136, 136, 0.2);
 }
 
 .petAge {
   padding-bottom: 50px;
+  text-shadow: 2px 2px rgba(136, 136, 136, 0.2),
+    2px 2px rgba(136, 136, 136, 0.2);
 }
 
 .footerButtons {
@@ -376,6 +468,8 @@ a {
   border: 2px solid #000;
   border-radius: 100px;
   margin-right: 30px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(197, 197, 197, 0.19);
 }
 
 .acceptButton img {
@@ -384,6 +478,8 @@ a {
   padding: 5px;
   border: 2px solid #000;
   border-radius: 100px;
+  box-shadow: 0 6px 10px 0 rgba(136, 136, 136, 0.2),
+    0 8px 30px 0 rgba(197, 197, 197, 0.19);
 }
 
 @media screen and (max-width: 600px) {
