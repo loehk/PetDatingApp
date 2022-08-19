@@ -12,57 +12,105 @@ a {
   color: inherit;
 }
 
-.backgroundImage {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-  z-index: -99;
-}
-
 .landingBodyContainer {
   font-size: 20px;
-  background-image: url(images/background.png);
+ }
+
+.headerAndMainContainer {
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130vh;
+}
+
+.mainAndFooterContainer {
+    position: relative;
+    top: 10rem;
+    z-index: 1;
 }
 
 .landingNav {
   display: flex;
   align-items: center;
   margin: 1rem;
+  margin-left: 0;
   color: white;
   margin-top: 0;
   width: 100%;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), transparent);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+@media only screen and (min-width: 1092px) {
+    .rightOptions {
+        position: absolute;
+        right: 0;
+        margin-right: 1rem;
+      }
+
+}   
+@media only screen and (max-width: 1091px) {
+    .rightOptions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    .rightOptions button {
+        width: max-content;
+    }
 }
 
-.rightOptions {
-  position: absolute;
-  right: 0;
-  margin-right: 1rem;
-}
 
 .rightOptions button {
-  background-color: white;
+ background-color: rgba(255, 255, 255, 0.8);
   font-size: inherit;
   padding: 0.6rem 2rem;
   border-radius: 2rem;
   cursor: pointer;
   border: none;
 }
+
+.rightOptions button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.15s ease-in-out;
+}
+
 .landingNavWrapper {
   display: flex;
   justify-content: space-between;
 }
 
+.languageSelectorContainer {
+    cursor: pointer;
+}
+
 .languageSelector {
   font-weight: 800;
   margin-right: 3rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.landingNav a img {
+  margin-right: 3rem;
+  filter: brightness(300);
+  margin: 3rem;
   cursor: pointer;
 }
 
-.landingNav img {
-  width: 150px;
-  margin-right: 3rem;
-  filter: brightness(300);
-  margin: 1rem;
+.languageIcon {
+    width: 30px !important;
+    position: relative;
+    top: 0.5rem;
+    display: none;
+}
+@media only screen and (min-width: 958px) {
+    .languageIcon {
+        display: inline;
+    }
 }
 
 .landingNav ul {
@@ -80,15 +128,43 @@ a {
   text-underline-offset: 1rem;
 }
 
+@media only screen and (max-width: 692px) {
+.landingNav ul {
+    display: none;
+}
+.hamburgerIcon {
+    display: inline;
+    width: 50px !important;
+    margin-left: 10%;
+    cursor: pointer;
+}
+}
+
+@media only screen and (min-width: 693px) {
+    .hamburgerIcon {
+        display: none;
+    }
+    
+}
+
+
 .landingNav img {
   width: 150px;
 }
 
+.landingMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mainHeading {
   color: #fff;
-  font-size: 8vw;
+  font-size: 7vw;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  line-height: 8rem;
+  width: 50rem;
 }
 
 .signupForm {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Pet Dating App</title>
+    <title>Pawtners® - A Dating Site for Pets</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap"
       rel="stylesheet"
@@ -14,44 +14,47 @@
   </head>
   <body>
     <div class="landingBodyContainer">
-      <div class="backgroundImage">
-        <img src="images/background.png" alt="background image" />
-      </div>
-
-      <header>
-        <nav class="landingNav">
-            <img src="images/logo.png" />
+      <div class="headerAndMainContainer">
+        <header>
+          <nav class="landingNav">
+            <a href=""> <img src="images/pawtners-logo.png" alt="logo" /></a>
             <ul>
-              <li><a href="">Products</a></li> 
-              <li><a href="">Learn</a></li> 
-              <li><a href="">Safety</a></li> 
-              <li><a href="">Support</a></li> 
-              <li><a href="">Download</a></li> 
+              <li><a href="">Products</a></li>
+              <li><a href="">Learn</a></li>
+              <li><a href="">Safety</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Download</a></li>
             </ul>
             <span class="rightOptions">
-              <span class="languageSelector">English</span>
-              <button>Log In</button></span
+              <span class="languageSelectorContainer">
+                <img class="languageIcon" src="images/lang-icon.png" alt="language icon" />
+                <span class="languageSelector">English</span></span
+              >
+
+              <button> <a href="firstPage.html">Log In</a></button>
+              </span
             >
+            <img class="hamburgerIcon" src="images/hamburger-icon.png" alt="hamburger icon for smaller screens">
+            
           </nav>
-       
-      </header>
-
-      <main class="landingMain">
-        <h1 class="mainHeading">Swipe Right</h1>
-        <form class="signupForm">
-          <label for="formEmail">Email</label>
-          <input type="email" id="formEmail" />
-          <label for="formUsername">Username</label>
-          <input type="text" id="formUsername" />
-          <label for="formPassword">Password</label>
-          <input type="password" id="formPassword" />
-          <a class="signupButton" href="/firstPage.html">Sign Up</a>
-        </form>
-      </main>
-
+        </header>
+<div class="mainAndFooterContainer">
+        <main class="landingMain">
+          <h1 class="mainHeading">Bark Up the Right Tree</h1>
+          <form class="signupForm">
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" />
+            <label for="formUsername">Username</label>
+            <input type="text" id="formUsername" />
+            <label for="formPassword">Password</label>
+            <input type="password" id="formPassword" />
+            <a class="signupButton" href="/firstPage.html">Sign Up</a>
+          </form>
+        </main>
+      </div>
       <section class="infoSection"></section>
 
-      <footer></footer>
+      <footer></footer></div>
     </div>
   </body>
 </html>
