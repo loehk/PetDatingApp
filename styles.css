@@ -542,5 +542,12 @@ input:checked + .slider .convText{
     padding-bottom: 0px;
   }
 
+}
 
+@media screen and (max-width: 800px) {
+  .logo img {
+    max-width: 200px;
+    padding-top: 20px;
+  }
+  
 }
