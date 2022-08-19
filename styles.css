@@ -215,6 +215,43 @@ a {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+footer {
+padding: 3rem;
+}
+
+.footerContainer {
+  font-size: 13px;
+  padding: 2rem;
+  color: rgb(163, 160, 160);
+  display: flex;
+  justify-content: space-between;
+  border-top: rgb(199, 195, 195) solid 1px;
+}
+
+footer ul {
+  width: max-content;
+}
+
+footer li {
+  display: inline;
+  list-style: none;
+  font-weight: 400;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+footer li:hover {
+  color: #f0c43a;
+  transition: 0.2s;
+}
+
+footer li::after {
+  content: "/";
+  color: rgb(163, 160, 160);
+  padding-left: 1rem;
+}
+
+
 /* Dating site */
 
 .pageContainer{
@@ -244,6 +281,8 @@ a {
   display: flex;
   flex-direction: column;
   width: 30%;
+  height: max-content;
+  min-height: 100%;
   padding: 40px;
   box-shadow: 0 0 10px 8px rgba(136, 136, 136, 0.2), 0 6px 20px 0 rgba(197, 197, 197, 0.19);
 }
@@ -290,6 +329,7 @@ a {
 }
 .match{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 40px;
   padding: 10px;
